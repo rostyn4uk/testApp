@@ -13,6 +13,7 @@
 ## Install packages
 Go to the workspace folder (testapp) and use a command:
 `npm install`
+
 This command installs a package, and any packages that it depends on  in the local node_modules folder.
 By default, npm install will install all modules listed as dependencies in package.json.
 
