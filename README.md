@@ -1,27 +1,24 @@
 # Testapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+## Cloning a Git repository
+1. From the repository, click + in the button Clon or download.
 
-## Development server
+2. Copy the clone command.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. From a terminal window, change to the local directory where you want to clone your repository.
 
-## Code scaffolding
+4. Paste the command you copied from Github, for example:
+`$ git clone https://github.com/rostyn4uk/testapp.git`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install packages
+Go to the workspace folder (testapp) and use a command:
+`npm install`
+This command installs a package, and any packages that it depends on  in the local node_modules folder.
+By default, npm install will install all modules listed as dependencies in package.json.
 
-## Build
+## Run the application
+1. Go to the workspace folder (testapp).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+2. Launch the server by using the CLI command ng serve, with the --open option:
+`ng serve --open`
+The ng serve command launches the server, watches your files, and rebuilds the app as you make changes to those files.
