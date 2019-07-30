@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Label</th>
+            <th scope="col">Price</th>
+            <th scope="col">Count</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of productsInCart">
+            <td>{{ product.name }}</td>
+            <td>{{ product.label }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.count }}</td>
+            <td> <button (click)="deleteItem(product.id)" type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Total: {{ total }}</p>
+    </div>
+  </div>
+</div>
